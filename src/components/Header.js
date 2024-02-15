@@ -18,25 +18,29 @@ const Header = () => {
         </Link>
         {/*nav*/}
         <nav className='hidden lg:flex'>
-            <Link to={'/'} className='text[#696c6d] hover:text-primary transition'>
+            <Link to={'/home'} className='text[#696c6d] hover:text-primary transition'>
               Home
             </Link>
         
         
-            <Link to={'/'} className='text[#696c6d] hover:text-primary transition'>
+            <Link to={'/about'} className='text[#696c6d] hover:text-primary transition'>
               About
             </Link>
         
         
-            <Link to={'/'} className='text[#696c6d] hover:text-primary transition'>
+            <Link to={'/portfolio'} className='text[#696c6d] hover:text-primary transition'>
               Portfolio
             </Link>
         
       
-            <Link to={'/'} className='text[#696c6d] hover:text-primary transition'>
+            <Link to={'/contact'} className='text[#696c6d] hover:text-primary transition'>
               Contact
             </Link>
         </nav>
+        {/* socials */}
+        <Socials/>
+        {/* Moble Nav */}
+        <MobileNav/>
       </div>
     </header>
   );
