@@ -7,11 +7,16 @@ import Link from 'react-router-dom';
 
 //import motion
 
-import Motion from 'react-router-dom';
+import{ motion } from 'framer-motion';
 
 
 const MobileNav = () => {
-  return <div>MobileNav</div>;
+  return <nav>
+    //nav open
+    <div className='text-3xl cursor-pointer'>
+      <CgMenuRight/>
+    </div>
+  </nav>;
 };
 
 export default MobileNav;
