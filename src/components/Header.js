@@ -13,16 +13,14 @@ const Header = () => {
   return (
     <header className='bg-pink-200 fixed w-full px-[30px] lg:px-[100px] z-30 h-[100px] lg:h-[140px] flex items-center'>
       <div className="flex-col lg:flex-row lg:items-center w-full justify-between">{/* Logo */}
-        <Link to={'/'}>
+        <Link to={'/'} className="max-w-[200px]">
           <img src={Logo} alt='' />
         </Link>
         {/*nav*/}
-        <nav className='hidden lg:flex'>
+        <nav className='hidden lg:flex gap-x-12 font-semibold'>
             <Link to={'/home'} className='text[#696c6d] hover:text-primary transition'>
               Home
             </Link>
-        
-        
             <Link to={'/about'} className='text[#696c6d] hover:text-primary transition'>
               About
             </Link>
