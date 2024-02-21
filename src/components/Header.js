@@ -17,12 +17,10 @@ const Header = () => {
           <img src={Logo} alt='' />
         </Link>
         {/*nav*/}
-        <nav className='hidden lg:flex'>
+        <nav className='hidden lg:flex gap-x-12 font-semibold'>
             <Link to={'/home'} className='text[#696c6d] hover:text-primary transition'>
               Home
             </Link>
-        
-        
             <Link to={'/about'} className='text[#696c6d] hover:text-primary transition'>
               About
             </Link>
