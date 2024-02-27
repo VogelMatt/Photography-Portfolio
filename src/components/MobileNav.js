@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { ioMdClose } from 'react-icons/io'
 import { CgMenuRight } from 'react-icons/io'
 //link
-import Link from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 //import motion
 
@@ -18,17 +18,28 @@ const MobileNav = () => {
     </div>
     <div className='bg-white shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20'>
       menu
-      <div>icon</div>
-      //menu useLayoutEffect(() => {
-        <ul>
+      <div>
+        <IoMdClose/>
+      </div>
+      
+        <ul className='h-full flex flex-col justify-center itmes-center gap-y-8 text-primary front-primary font-bold text-3xl'>
           <li>
-            <Link>Home</Link>
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/about '>About</Link>
+          </li>
+          <li>
+            <Link to='/portfolio'>Portfolio</Link>
+          </li>
+          <li>
+            <Link to='/contact'>Contact</Link>
           </li>
         </ul>
       
         return () => {
-          second
-        };
+        second
+      };
       }, [third])
     </div>
   </nav>;
