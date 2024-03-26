@@ -10,10 +10,24 @@ import { Link } from 'react-router-dom';
 import { motion, useTransform } from 'framer-motion';
 
 
+
+const menuVariants = {
+  hidden: {
+    x:'100%'
+  },
+  show: {
+    x:0,
+    transition: {
+      ease: [0.6,0.01,-0.05, 0.9],
+    },
+  },
+};
+
+
 const MobileNav = () => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <nav>
+    <nav className='text-primary xl:hidden'>
     //nav open
       <div className='text-3xl cursor-pointer'>
         <CgMenuRight />
@@ -23,7 +37,7 @@ const MobileNav = () => {
         <div className='text-4xl absolute z-30 left-4 top-14 text-primary cursor-pointer'>
           <IoMdClose />
         </div>
-
+        <div>icon</div>
         <ul className='h-full flex flex-col justify-center itmes-center gap-y-8 text-primary front-primary font-bold text-3xl'>
           <li>
             <Link to='/'>Home</Link>
