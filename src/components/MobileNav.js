@@ -32,7 +32,11 @@ const MobileNav = () => {
       <div className='text-3xl cursor-pointer'>
         <CgMenuRight />
       </div>
-      <div className='bg-white shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20'>
+      <motion.div 
+      variants={menuVariants}
+      initial='hidden'
+      animate={openMenu ? 'show' : '' }
+      className='bg-white shadow-2xl w-full absolute top-0 right-0 max-w-xs h-screen z-20'>
         menu
         <div className='text-4xl absolute z-30 left-4 top-14 text-primary cursor-pointer'>
           <IoMdClose />
@@ -52,7 +56,7 @@ const MobileNav = () => {
             <Link to='/contact'>Contact</Link>
           </li>
         </ul>
-      </div>
+      </motion.div>
     </nav>
   );
 };
