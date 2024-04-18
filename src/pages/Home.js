@@ -13,7 +13,9 @@ const Home = () => {
           <div>
             <h1>Photographer <br/> & Film Maker</h1>
           </div>
-
+            <div>
+              image title
+            </div>
           <div>image</div>
         </div>
       </div>
