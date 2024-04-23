@@ -17,9 +17,12 @@ const Home = () => {
             <p className='text-[26px] lg:text-[36px] font-primary mb-4 lg:mb-12'>
               Nashville, Tennessee
             </p>
+            <Link to={'/contact'}>Hire Me</Link>
           </div>
             
-          <div>image</div>
+          <div className='relative lg:-right-40 overflow-hidden'>
+            <img src={WomanImg} alt='' />
+          </div>
         </div>
       </div>
     </section>
