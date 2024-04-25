@@ -14,6 +14,9 @@ const About = () => {
   return <section className='section bg-yellow-200'>
     <div className="container mx-auto h-full relative">
       {/*text wrapper */}
+      <div>Image</div>
+      {/* text */}
+      <div>text</div>
     </div>
   </section>;
 };
