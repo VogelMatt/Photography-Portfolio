@@ -22,7 +22,15 @@ const About = () => {
           </div>
           {/* text */}
           <div>
-            <h1></h1>
+            <h1 className='h1'> About Me </h1>
+              <p>
+                lorem ipsum dolor sit amet consectetur, adispicing elit. eceritationem, vertiratis. Veritatis illum aut, Reprehenderit sed dolorem dolore.
+              </p>
+              <br/>
+              <br/>
+              <p>
+              orem ipsum dolor sit amet consectetur, adispicing elit. eceritationem, vertiratis. Veritatis illum aut, Reprehenderit sed dolorem dolor
+              </p>
           </div>
         </div>
       </div>
