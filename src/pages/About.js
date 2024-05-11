@@ -21,7 +21,7 @@ const About = () => {
             <img src={WomanImg} alt='' />
           </div>
           {/* text */}
-          <div>
+          <div className='flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto z-10 '>
             <h1 className='h1'> About Me </h1>
               <p>
                 lorem ipsum dolor sit amet consectetur, adispicing elit. eceritationem, vertiratis. Veritatis illum aut, Reprehenderit sed dolorem dolore.
@@ -31,6 +31,7 @@ const About = () => {
               <p>
               orem ipsum dolor sit amet consectetur, adispicing elit. eceritationem, vertiratis. Veritatis illum aut, Reprehenderit sed dolorem dolor
               </p>
+              <Link to={'/portfolio'}>view my work </Link>
           </div>
         </div>
       </div>
