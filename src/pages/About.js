@@ -21,15 +21,16 @@ const About = () => {
             <img src={WomanImg} alt='' />
           </div>
           {/* text */}
-          <div className='flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto z-10 '>
+          <div className='flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center itmes-center lg:items-start'>
             <h1 className='h1'> About Me </h1>
-              <p>
-                lorem ipsum dolor sit amet consectetur, adispicing elit. eceritationem, vertiratis. Veritatis illum aut, Reprehenderit sed dolorem dolore.
-              </p>
+              <p className='mb-12 max-w-sm'>
+              Feeling mad hostile, ran the apostle, flowing like Christ when I speak the gospel. Leave it up to me while I be livin' proof Domino effect arts and crafts, paragraphs contain cyanide.             
               <br/>
+              <br/> 
+              I be that insane one from the psycho ward, I'm on the trigger, plus I got the Wu-Tang sword. <b>Protect Ya Neck</b>, my sword still remain imperial before I blast the mic, RZA scratch off the serial. Handcuffed in the back of a bus, forty of us.
               <br/>
-              <p>
-              orem ipsum dolor sit amet consectetur, adispicing elit. eceritationem, vertiratis. Veritatis illum aut, Reprehenderit sed dolorem dolor
+              <br/>           
+              Shackling the masses with drastic rap tactics, graphic displays melt the steel like blacksmiths. Lyrically perform armed robbery, flee with the lottery, possibly they spotted me. I come rough, tough like an Elephant tusk.
               </p>
               <Link to={'/portfolio'}>view my work </Link>
           </div>
