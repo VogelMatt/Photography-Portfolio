@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 //icons
-import { ioMdClose } from 'react-icons/io'
-import { CgMenuRight } from 'react-icons/io'
+// import { ioMdClose } from 'react-icons/io'
+// import { CgMenuRight } from 'react-icons/io'
 //link
 import { Link } from 'react-router-dom';
 
@@ -32,7 +32,6 @@ const MobileNav = () => {
       <div
         onClick={() => setOpenMenu(true)}
         className='text-3xl cursor-pointer'>
-        <CgMenuRight />
       </div>
       <motion.div
         variants={menuVariants}
@@ -43,7 +42,6 @@ const MobileNav = () => {
         <div 
           onClick={()=> setOpenMenu(false)}
           className='text-4xl absolute z-30 left-4 top-14 text-primary        cursor-pointer'>
-          <IoMdClose />
         </div>
         <div>icon</div>
         <ul className='h-full flex flex-col justify-center itmes-center gap-y-8 text-primary front-primary font-bold text-3xl'>
@@ -66,3 +64,6 @@ const MobileNav = () => {
 };
 
 export default MobileNav;
+
+{/* <CgMenuRight /> */}
+{/* <IoMdClose /> */}
